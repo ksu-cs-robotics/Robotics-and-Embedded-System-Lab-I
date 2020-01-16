@@ -46,8 +46,8 @@ This course is mainly designed for a sophomore (CS-23301) and junior (CS-23302) 
 opportunity to participate in various currently ongoing projects which are conducted at several laboratories (ATR Lab, Scale Lab, etc.) in the CS department. Especially, students will gain knowledge and ideas from those projects for their future capstone project in terms of project management as well as advanced technologies in intelligent robot systems, Internet-of-Things, etc. <br/> 
 The course project will involve significant programming and hardware works. For Spring 2020, mini Rescue Robot project will be conducted. Each student will build a simple ground robot and its control programming from scratch. At the end of the semester, all students will have their final project presentation and mini RobotCup-Rescue competition as parts of class outcomes.
 
-<img src="resources/images/random/sy1.png" width="49%"/> 
-<img src="resources/images/random/sy2.png" width="49%"/>
+<img src="resources/images/random/sy1.png" width="40%"/> 
+<img src="resources/images/random/sy2.png" width="40%"/>
 
 <div align="center">
 <a href = "https://www.youtube.com/watch?v=jhXC-N_kySs"> <h4>[RoboCup Rescue Challenge] </a>
