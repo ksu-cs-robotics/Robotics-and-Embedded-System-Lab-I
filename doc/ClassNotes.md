@@ -3,12 +3,11 @@
  <img src="https://raw.githubusercontent.com/ksu-cs-robotics/Software-Development-for-Robotics/master/resources/images/ATR-logo.gif" alt="ATR"></a>
 </p>
 
-<h3 align="center">Software Development for Robotics</h3>
+<h3 align="center">CS 23301/23302: Robotics and Embedded System Lab Class</h3>
 
 <div align="center">
 
   [![Status](https://img.shields.io/badge/status-active-success.svg)]() 
-  [![build](https://img.shields.io/badge/build-melodic-green)]()
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
