@@ -81,6 +81,7 @@ drone and control interface
 
 ### Grading:
 Students will be evaluated based on the following course activities and graded based on the following weighting:
+
 |Item|Percentage|(Individual/Group)|
 |--|:--:|:--:|
 Attendance, Participation, and (in class) Pop Quiz|10%|individual|
