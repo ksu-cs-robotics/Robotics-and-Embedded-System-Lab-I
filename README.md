@@ -23,6 +23,8 @@
 + [1. Notes and Document: doc/](https://github.com/ksu-cs-robotics/robotics-and-embedded-system-spring-2020/tree/master/doc)
 + [2. Source Code: src/](https://github.com/ksu-cs-robotics/robotics-and-embedded-system-spring-2020/tree/master/src)
 
+---
+
 |||
 |--|--|
 |Class Instructor:|Dr. Jong-Hoon Kim|
