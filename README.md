@@ -47,7 +47,7 @@ opportunity to participate in various currently ongoing projects which are condu
 The course project will involve significant programming and hardware works. For Spring 2020, mini Rescue Robot project will be conducted. Each student will build a simple ground robot and its control programming from scratch. At the end of the semester, all students will have their final project presentation and mini RobotCup-Rescue competition as parts of class outcomes.
 
 <img src="resources/images/random/sy1.png" width="49%"/> 
-<img src="resources/images/random/sy2.png" width="50%"/>
+<img src="resources/images/random/sy2.png" width="49%"/>
 
 <div align="center">
 <a href = "https://www.youtube.com/watch?v=jhXC-N_kySs"> <h4>[RoboCup Rescue Challenge] </a>
@@ -168,10 +168,3 @@ http://www.kent.edu/studentconduct/code-studentconduct.
     - In case of an emergency please contact the security on campus.
       - Pick up the receiver of any blue-light phone on campus
       - Security cell phone (330) 672-2212 or, of course, 911.
-
-
-
-
-
-## ✍️ 2. Notes <a name = "notes"></a>
-check under **[doc/](https://github.com/ksu-cs-robotics/robotics-and-embedded-system-spring-2020/tree/master/doc)** for more notes
