@@ -73,7 +73,7 @@ drone and control interface
 ### Required Text:
 **No Textbook** is required, but various handouts/example-codes/selected hardware for building a ground robot will be provided.
 
-[Recommended texts for your references ]
+**[Recommended texts for your references]**
 
 1. “Introduction to Multicopter Design and Control”, 1st ed. 2017 Edition. by Quan Quan (Author) - Publisher: Springer - (ISBN-10: 9789811033810)
 1. “Physical Computing: Sensing and Controlling the Physical World with Computers” 1st Edition”, Dan O'Sullivan and Tom Igoe, (ISBN-10: 159200346X), (ISBN-13: 978-1592003464)
