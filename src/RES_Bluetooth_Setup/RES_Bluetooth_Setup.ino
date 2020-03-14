@@ -40,7 +40,7 @@
 *       -- e.g. "AT+NAME=KIM_MASTER"  then you will see "OK"
 *       -- for checking the updated result, type "AT+NAME", then you should see "+NAME:KIM_MASTER"  
 *     5) Communication Speed Setup (115200 bps)
-*       -- type "AT+BAUD=115200,0,0" 
+*       -- type "AT+UART=115200,0,0" 
 *       
 *     6) Setup Slave Bluetooth
 *       1) Get Bluetooth Address for paring purpuse so you need to note the address
@@ -66,11 +66,23 @@
 *     
 *********************************************************************/
 
+/************************************************
+ * If your Arduino has only one Serial port (such as Arduion Nano, micro, etc.)
+ * then you can setup Software serial using below library
+ * 
+ *  #include <SoftwareSerial.h>
+ *  SoftwareSerial mySerial(2, 3); // RX, TX
+************************************************/
+
+// My Master = 98D3:32:F59EA7
+// 
+
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(38400);    // after setup your bluetooth, you need to set 115200 bps "Serial.begin(115200);"
   Serial3.begin(38400);   // after setup your bluetooth, you need to set 115200 bps "Serial3.begin(115200);"
+//  mySerial.begin(38400);
   Serial.println("Started _KIM");
 }
 
@@ -85,6 +97,19 @@ void loop() {
     char b = Serial3.read();
     Serial.print(b);
   }
+
+/* for software serial
+ *  
+  if (Serial.available() > 0){
+    char a = Serial.read();
+    mySerial.print(a);
+  }
+
+  if (mySerial.available() > 0){
+    char b = mySerial.read();
+    Serial.print(b);
+  }
+*/
 
 
 }
