@@ -3,7 +3,7 @@
  <img src="https://raw.githubusercontent.com/ksu-cs-robotics/Software-Development-for-Robotics/master/resources/images/ATR-logo.gif" alt="ATR"></a>
 </p>
 
-<h3 align="center">Software Development for Robotics</h3>
+<h3 align="center">CS 23301/23302: Robotics and Embedded System Lab Class</h3>
 
 <div align="center">
 
@@ -33,13 +33,15 @@
 1. Create an account:  
     https://zoom.us/signin
 
-1. Joint Meeting
-    <img src="https://raw.githubusercontent.com/ksu-cs-robotics/Software-Development-for-Robotics/master/resources/images/zoom/zoom_1.jpg"/>
+1. Joint Meeting:  
+    <p align="center">
+    <img src="https://raw.githubusercontent.com/ksu-cs-robotics/software-development-for-robotics-spring-2020/master/resources/images/zoom/zoom_1.jpg"/>
 
-    <img src="https://raw.githubusercontent.com/ksu-cs-robotics/Software-Development-for-Robotics/master/resources/images/zoom/zoom_2.jpg"/>
+    <img src="https://raw.githubusercontent.com/ksu-cs-robotics/software-development-for-robotics-spring-2020/master/resources/images/zoom/zoom_2.jpg"/>
 
-    <img src="https://raw.githubusercontent.com/ksu-cs-robotics/Software-Development-for-Robotics/master/resources/images/zoom/zoom_3.jpg"/>
+    <img src="https://raw.githubusercontent.com/ksu-cs-robotics/software-development-for-robotics-spring-2020/master/resources/images/zoom/zoom_3.jpg"/>
 
-    <img src="https://raw.githubusercontent.com/ksu-cs-robotics/Software-Development-for-Robotics/master/resources/images/zoom/zoom_4.jpg"/>
-
-    you can play around it for a while to check out all the things zoom can do
+    <img src="https://raw.githubusercontent.com/ksu-cs-robotics/software-development-for-robotics-spring-2020/master/resources/images/zoom/zoom_4.jpg"/>
+    </p>
+    
+    **play around it for a while to check out all the things zoom can do**
