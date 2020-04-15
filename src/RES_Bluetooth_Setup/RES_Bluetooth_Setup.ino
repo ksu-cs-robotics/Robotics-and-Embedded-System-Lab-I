@@ -45,7 +45,7 @@
 *     6) Setup Slave Bluetooth
 *       1) Get Bluetooth Address for paring purpuse so you need to note the address
 *       -- Type "AT+ADDR" and then you will see "+ADDR:XXXX:YY:ZZZZZZ", here "XXXX:YY:ZZZZZZ" is the address
-*       2) setup slave role ( "AT+ROLE=0"), master role ("AT+ROLE=0")
+*       2) setup slave role ( "AT+ROLE=0"), master role ("AT+ROLE=1")
 *       -- e.g. slave node, Type "AT+ROLE=0"
 *       -- after setup this role, it occurs automatic reboot the bluetooth module
 *       -- so you need to unplug and do 1) setup mode initiation
@@ -74,16 +74,17 @@
  *  SoftwareSerial mySerial(2, 3); // RX, TX
 ************************************************/
 
-// My Master = 98D3:32:F59EA7
-// 
+// My Master = 98D3:31:F5934E
+// Kim_Slave = 98D3:31:F73A44
+
 
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(38400);    // after setup your bluetooth, you need to set 115200 bps "Serial.begin(115200);"
-  Serial3.begin(38400);   // after setup your bluetooth, you need to set 115200 bps "Serial3.begin(115200);"
+  Serial3.begin(38400);   // after setup your bluetooth, you need to set 115200 bps "Serial3.begin(115200);
 //  mySerial.begin(38400);
-  Serial.println("Started _KIM");
+  Serial.println("Started _KIM2");
 }
 
 void loop() {
