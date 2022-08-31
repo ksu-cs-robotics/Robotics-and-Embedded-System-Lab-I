@@ -3,7 +3,7 @@
  <img src="resources/images/ATR-logo.gif" alt="ATR"></a>
 </p>
 
-<h3 align="center">CS 23301/23302: Robotics and Embedded System Lab Class</h3>
+<h3 align="center">CS 23301: Robotics and Embedded System Lab - I </h3>
 
 <div align="center">
 
@@ -27,20 +27,20 @@
 |||
 |--|--|
 |Class Instructor:|Dr. Jong-Hoon Kim|
-|Office Location:|MSB 236-A|
+|Office Location:|MSB 236-B|
 |Office Phone:|330-672-9060|
 |e-mail:|jkim72@kent.edu|
-|Office Hours:|Monday and Wednesday: <br/> 10:30 AM - 11:00 AM (MSB 104) <br/> 12:15 PM ~ 13:30 PM (MSB 236-A) <br/> Other times by appointment|
+|Office Hours:|Monday and Wednesday: <br/> 10:30 AM - 11:00 AM (MSB 104) <br/> 12:15 PM ~ 13:30 PM (MSB 236-B) <br/> Other times by appointment|
 |---|---|
-|Teaching Assistant:|Xiangxu Lin|
-|TA-Office Hours:|By email appointment|
-|TA-Email:|xlin10@kent.edu|
+|Teaching Assistant:| |
+|TA-Office Hours:| |
+|TA-Email:| |
 
 ### Prerequisite:
 C or better in CS 13001 Computer Programming
 
 ### Credits:
-CS 23301 ( 1 Credit) and CS 233021 ( 2 Credits)
+CS 23301 ( 1 Credit) 
 
 ### Course Outline and Objectives:
 This course is mainly designed for a sophomore (CS-23301) and junior (CS-23302) undergraduate students who have an interest in robotics and embedded systems, with a special emphasis on understanding basic hardware and software, and on learning those basics by doing. Thus, this is a lap oriented class providing hands-on-experiences through a selected fun project such as rescueRobot,miniDrone, autonomous miniCar, etc. Further, students may have an
@@ -108,37 +108,22 @@ Attendance, Participation, and (in class) Pop Quiz|10%|individual|
 
 ||||
 |--|--|--|
-|Week1|01/13/2020|Introduction of Robotics and Embedded System Lab course, schedule/requirements|
-||01/15/2020|Open Discussion for the class project|
-|Week2|**01/20/2020**|**Martin Luther King Jr Day**|
-||01/22/2020|Setup Development Environment (Arduino, RPi, Linux Command and GitHub)|
-|Week3|01/27/2020|Basic Component - Electronic Component [Diode, Resistor, etc] , Microcontroller [Arduino]|
-||01/29/2020|- Wiring on a breadboard,|
-|Week4|02/03/2020|Motion Control - DC Motor and Analog Servo|
-||02/05/2020|- Arduino (Digital and Analog Output)|
-|Week5|02/10/2020|Digital Sensing - Button and Switch|
-||02/12/2020|- Arduino (Digital Input )|
-|Week6|02/17/2020|Remote Control - Bluetooth Serial|
-||02/19/2020|- Communication (UART, Protocol, and Message Parsing)|
-|Week7|02/24/2020|Project A - RC Control Car|
-||02/26/2020|- Competition A|
-|Week8|03/02/2020|Analog Sensing - Joystick|
-||03/04/2020|- Arduino (Analog Input) and Competition B|
-|Week9|03/09/2020|Sensor 1 - Proximity sensor (Sonar, IR Sensor)|
-||03/11/2020|- Arduino (Digital and Analog Input) and Competition C|
-|Week10|03/16/2020|Sensor 2 - Encoder|
-||03/18/2020|- Arduino (Digital and Analog Input) and Competition D|
-|Week11|**03/23~03/25**|**Spring Break**|
-|Week12|03/30/2020|Sensor 2 - IMU Sensor|
-||04/01/2020|- Arduino (I2C Communication) and Competition E|
-|Week13|04/06/2020|Sensoring Enhancement|
-||04/08/2020|- Noise Filtering|
-|Week14|04/13/2020|Controlling Enhancement|
-||04/15/2020|- PID control|
-|Week15|04/20/2020|Robot Competition - Final|
-||04/22/2020|Introduction to Advanced Technologies|
-|Week16|04/27/2020|Final Project Presentation - (10min presentation & 5 min QnA)|
-||**04/29/2020**|**Final Exam**|
+|Week1|Introduction of Robotics and Embedded System Lab course, schedule/requirements|
+|Week2|**Labor Day Holiday**|
+|Week3| Setup Development Environment (Arduino and GitHub)|
+|Week4| Basic Component - Electronic Component [Diode, Resistor, etc] , Microcontroller [Arduino], Wiring on a breadboard|
+|Week5| Function and Time - Digital Output ( LED and Buzzer) |
+|Week6| Analog Output (LED and Buzzer), Motion Control (Servo Motor)|
+|Week7| Midterm and Code Sharing (Github) |
+|Week8| Digital Input (Button and Switch) |
+|Week9| Analog Input ( Joystick) |
+|Week10| Motion Control (DC Motor Control) |
+|Week11| Serial Communication  (UART - Output)|
+|Week12| Wireless Communication (Bluetooth Serial)
+|Week13| Introduction to Advanced Robotics Technologies|
+|Week14| Project Time 
+|Week15| Final Project Presentation/Demo - (10min presentation & 5 min QnA)|
+|Week16|**Final Exam**|
 
 ### Course policy:
 1. **Class participation and preparation**
