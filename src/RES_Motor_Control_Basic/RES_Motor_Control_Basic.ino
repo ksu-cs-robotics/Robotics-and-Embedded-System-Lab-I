@@ -5,7 +5,7 @@
 *
 * Author            : Jong-Hoon Kim
 *
-* Date created      : 03/10/2020
+* Date created      : 10/31/2022
 *
 * Purpose           : H-Bridge Motor Driver 
 *
@@ -22,62 +22,40 @@
 *   reference website ( https://www.pjrc.com/teensy/td_libs_Encoder.html )                    
 ***********************************************************************/
 
-#define PIN_WHEEL_ENCODER_CLK_LEFT    2
-#define PIN_WHEEL_ENCODER_DT_LEFT    4
-#define PIN_WHEEL_ENCODER_SW_LEFT    5
-#define PIN_MOTOR_PWM_LEFT    8
-#define PIN_MOTOR_IN0_LEFT    9
-#define PIN_MOTOR_IN1_LEFT    10
+#define PIN_SERVO_0           12
+#define PIN_MOTOR_PWM_LEFT    11
+#define PIN_MOTOR_IN0_LEFT    10
+#define PIN_MOTOR_IN1_LEFT    9
+#define PIN_JOY_SW            A0
+#define PIN_JOY_X             A1
+#define PIN_JOY_Y             A2
+#define INTERVAL_PRINT        1000
+
+
+long preTime = 0;
+int motorSpeedLeft = 0;
 
 void setup() {
   Serial.begin(115200);
-  Serial3.begin(115200);
   Serial.println("Motor Control Started");
-  pinMode(PIN_WHEEL_ENCODER_CLK_LEFT, INPUT_PULLUP);
-  attachInterrupt(digitalPinToInterrupt(PIN_WHEEL_ENCODER_CLK_LEFT), updateEncoder, CHANGE);  
+  pinMode(PIN_MOTOR_PWM_LEFT, OUTPUT); pinMode(PIN_MOTOR_IN0_LEFT, OUTPUT); pinMode(PIN_MOTOR_IN1_LEFT, OUTPUT);
+  pinMode(PIN_JOY_SW, INPUT_PULLUP);
+  pinMode(PIN_JOY_X, INPUT); pinMode(PIN_JOY_Y, INPUT);
+  preTime = millis() + INTERVAL_PRINT; 
 }
 
-
-int encoderPin_X  = 0;
-int encoderPin_Y  = 0;
-long counter  =0;
-
-int targetPosition = 0;
-
 void loop() {
-  if (Serial.available() > 0){
-    char tmpChar = Serial.read();
-    if (tmpChar == 'a') targetPosition = 200;
-    else if (tmpChar == 's') targetPosition = 0;
-    else if (tmpChar == 'd') targetPosition = -200;
-    else  {
-      Serial.print(counter);
-      Serial.print("  = ");
-      Serial.println(targetPosition);
-      Serial3.print(counter);
-      Serial3.print("  = ");
-      Serial3.println(targetPosition);
-    }
+  if (preTime > millis()){
+      preTime = millis() + INTERVAL_PRINT;
+      Serial.print("Left Motor Power  = ");
   }
-   if (Serial3.available() > 0){
-    char tmpChar = Serial3.read();
-    if (tmpChar == 'a') targetPosition = 200;
-    else if (tmpChar == 's') targetPosition = 0;
-    else if (tmpChar == 'd') targetPosition = -200;
-    else  {
-      Serial3.print(counter);
-      Serial3.print("  = ");
-      Serial3.println(targetPosition);
-      Serial.print(counter);
-      Serial.print("  = ");
-      Serial.println(targetPosition);
-     }
-  }
-  if (targetPosition < counter){
-    analogWrite(PIN_MOTOR_PWM_LEFT, 255);   digitalWrite( PIN_MOTOR_IN0_LEFT, HIGH);    digitalWrite( PIN_MOTOR_IN1_LEFT , LOW);
+
+  motorSpeedLeft = map( analogRead(PIN_JOY_X), 0,1023, minOut, maxOut):
+  if (motorSpeedLeft < 0){
+    analogWrite(PIN_MOTOR_PWM_LEFT, -motorSpeedLeft);   digitalWrite( PIN_MOTOR_IN0_LEFT, HIGH);    digitalWrite( PIN_MOTOR_IN1_LEFT , LOW);
     
-  }else if (targetPosition > counter){
-    analogWrite(PIN_MOTOR_PWM_LEFT, 255);   digitalWrite( PIN_MOTOR_IN0_LEFT , LOW);    digitalWrite( PIN_MOTOR_IN1_LEFT , HIGH);
+  }else if (motorSpeedLeft > 0){
+    analogWrite(PIN_MOTOR_PWM_LEFT, motorSpeedLeft);   digitalWrite( PIN_MOTOR_IN0_LEFT , LOW);    digitalWrite( PIN_MOTOR_IN1_LEFT , HIGH);
     
   }else{
     analogWrite(PIN_MOTOR_PWM_LEFT, 0);   digitalWrite( PIN_MOTOR_IN0_LEFT, LOW);    digitalWrite( PIN_MOTOR_IN1_LEFT , LOW);
@@ -86,21 +64,4 @@ void loop() {
 
 
 
-void updateEncoder(){
-  encoderPin_X = digitalRead(PIN_WHEEL_ENCODER_CLK_LEFT);
-  encoderPin_Y = digitalRead(PIN_WHEEL_ENCODER_DT_LEFT);
 
-  if (encoderPin_X == 0){   
-    if (encoderPin_Y == 0){
-      counter++;
-    }else{
-      counter--;
-    }
-  }else{
-    if (encoderPin_Y == 0){
-      counter--;
-    }else{
-      counter++;
-    }    
-  }
-}
