@@ -9,7 +9,7 @@
 ##########################################################################
 # Project           : RES_Class, Serial to Serial fowarder 
 #
-# Program name      : Serial2Serial.py
+# Program name      : Serial2Bluetooth-Fowarder.py
 #
 # Author            : Jong-Hoon Kim
 #
@@ -26,7 +26,9 @@
 ##########################################################################
 ##########################################################################
 #   Instructional Note:  
-#           
+#		This code is for Python 2.7. If you are using Python 3.x, use "Serial2Bluetooth-Fowarder-p3.py
+#		If your sytem doesn't have serial, numpy, and open-cv package yet, use pip to intstall them
+#			"pip install numpy open-cv-python serial"
 #           
 ##########################################################################
 
